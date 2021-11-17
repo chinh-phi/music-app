@@ -1,0 +1,66 @@
+<link rel="stylesheet" href="/css/register.css">
+
+<form id="form-register" method="post" action="register/create">
+    <h3 class="form-heading">Ready to sign up?</h3>
+    <p class="form-recommend-signup">
+        Already have a Deezer account?
+        <a href="/login">Log in</a>
+    </p>
+
+    <div class="form-method-register">
+        <a href="" class="btn-method-register">
+            <i class="btn-method-icon fab fa-facebook"></i>
+            FACEBOOK
+        </a>
+        <a href="/auth/google" class="btn-method-register">
+            <i class="btn-method-icon fab fa-google"></i>
+            GOOGLE
+        </a>
+    </div>
+
+    <div class="form-content">
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" class="form-control" id="username" placeholder="Enter your name" name="username">
+            <span class="form-message"></span>
+        </div>
+        <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            <span class="form-message"></span>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Password" name="password">
+            <span class="form-message"></span>
+        </div>
+        <div class="form-group">
+            <label for="password-confirmation">Confirm Password</label>
+            <input type="password" class="form-control" id="password-confirmation" placeholder="Confirm Password" name="password-confirmation">
+            <span class="form-message"></span>
+        </div>
+
+    </div>
+    <button type="submit" class="btn btn-register">SIGN UP</button>
+
+    <p id="rules">
+        This site is protected by reCAPTCHA and the Google <a href="">Privacy Policy</a> and <a href="">Terms of
+            Service</a> apply.
+    </p>
+</form>
+
+<script src="/javascript/validateForm.js"></script>
+<script>
+    Validator({
+        form: '#form-register',
+        errorSelector: '.form-message',
+        rules: [
+            Validator.isRequired('#username'),
+            Validator.isEmail('#email'),
+            Validator.minLength('#password', 8),
+            Validator.isConfirm('#password-confirmation', function () {
+                return document.querySelector('#form-register #password').value;
+            }, 'Re-entered password is incorrect'),
+        ]
+    })
+</script>

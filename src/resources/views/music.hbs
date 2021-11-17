@@ -1,0 +1,411 @@
+<div id="deezer-app">
+  <div class="page-topbar" id="page-topbar">
+    <div class="topbar-search">
+      <div class="wrapper">
+        <form action="" class="topbar-search-form">
+          <div class="topbar-search-submit">
+            <i class="fas fa-search topbar-search-submit-icon"></i>
+          </div>
+          <input type="text" class="topbar-search-input" id="topbar-search-input" placeholder="Search" name="search">
+          <ul id="search-result-list" class="hide">
+
+          </ul>
+          <button class="topbar-search-clear" type="button">
+            <i class="fas fa-times-circle topbar-search-clear-icon"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="topbar-action">
+      <div class="topbar-action-btn">
+        <button class="topbar-notification" type="button">
+          <i class="fas fa-bell topbar-notification-icon"></i>
+        </button>
+      </div>
+      <div class="topbar-action-btn">
+        <button class="topbar-profile" type="button">
+          <i class="fas fa-user-tie topbar-profile-icon"></i>
+        </button>
+        <div class="account-manage">
+          <a href="/music/profile/me" class="account-manage-header">
+            <div class="account-photo">
+              <img
+                src="https://e-cdns-images.dzcdn.net/images/user/d41d8cd98f00b204e9800998ecf8427e/264x264-000000-80-0-0.jpg"
+                alt="">
+            </div>
+            <div class="account-name">Phí Hữu Chính</div>
+            <i class="fas fa-chevron-right icon-right"></i>
+          </a>
+          <hr style="margin: 0;">
+          <div class="account-manage-content">
+            <ul class="account-manage-content-list">
+              <li class="account-manage-content-item">
+                <a href="/music/account" class="account-manage-content-item-link" id="account-manage-content-setting">
+                  Account Settings
+                  <i class="fas fa-chevron-right icon-right"></i>
+                </a>
+              </li>
+              <li class="account-manage-content-item">
+                <a href="/api/signout" class="account-manage-content-item-link">
+                  Log out
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page-sidebar" id="page-sidebar">
+    <div class="sidebar-logo">
+      <a href="/music/" id="sidebar-logo-deezer-dark"></a>
+    </div>
+
+    <div class="sidebar-img">
+    </div>
+
+    <div class="sidebar-category">
+      <ul class="sidebar-nav-list">
+        <div id="sidebar-nav-line"></div>
+        <li class="sidebar-nav-item">
+          <a href="/music/" class="sidebar-nav-link active">
+            <i class="sidebar-nav-link-icon fas fa-music active"></i>
+            <span class="sidebar-nav-label">Music</span>
+          </a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a href="/music/category" class="sidebar-nav-link">
+            <i class="sidebar-nav-link-icon fas fa-microphone-alt"></i>
+            <span class="sidebar-nav-label">Categories</span>
+          </a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a href="/music/browse" class="sidebar-nav-link">
+            <i class="sidebar-nav-link-icon fas fa-window-maximize"></i>
+            <span class="sidebar-nav-label">Browse</span>
+          </a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a href="/music/profile/me" class="sidebar-nav-link">
+            <i class="sidebar-nav-link-icon far fa-heart"></i>
+            <span class="sidebar-nav-label">Favorites</span>
+          </a>
+        </li>
+        <li class="sidebar-nav-item sidebar-nav-item-small">
+          <a href="/music/profile/me/loved" class="sidebar-nav-link sidebar-nav-link-small">
+            <span class="sidebar-nav-label sidebar-nav-label-small">Favorite Tracks</span>
+          </a>
+        </li>
+        <li class="sidebar-nav-item sidebar-nav-item-small">
+          <a href="/music/profile/me/playlists" class="sidebar-nav-link sidebar-nav-link-small">
+            <span class="sidebar-nav-label sidebar-nav-label-small">Playlists</span>
+          </a>
+        </li>
+        {{!-- <li class="sidebar-nav-item sidebar-nav-item-small">
+          <a href="" class="sidebar-nav-link sidebar-nav-link-small">
+            <span class="sidebar-nav-label sidebar-nav-label-small">Albums</span>
+          </a>
+        </li>
+        <li class="sidebar-nav-item sidebar-nav-item-small">
+          <a href="" class="sidebar-nav-link sidebar-nav-link-small">
+            <span class="sidebar-nav-label sidebar-nav-label-small">Artists</span>
+          </a>
+        </li>
+        <li class="sidebar-nav-item sidebar-nav-item-small">
+          <a href="" class="sidebar-nav-link sidebar-nav-link-small">
+            <span class="sidebar-nav-label sidebar-nav-label-small">Podcasts</span>
+          </a>
+        </li> --}}
+      </ul>
+    </div>
+  </div>
+  <div class="page-main" id="page-content">
+
+  </div>
+
+  <div class="page-queue">
+    <div class="player-header">
+      <div class="player-close">
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </div>
+    <div class="player-container">
+      <div class="queuelist-cover">
+        <div class="queuelist-cover-thumbnail">
+          <img src="" alt="">
+        </div>
+        <div class="queuelist-cover-actions">
+          <ul class="queuelist-cover-actions-list">
+            <li class="queuelist-cover-actions-item">
+              <i class="queuelist-cover-actions-icon fas fa-plus"></i>
+            </li>
+            <li class="queuelist-cover-actions-item">
+              <i class="queuelist-cover-actions-icon far fa-heart"></i>
+            </li>
+            <li class="queuelist-cover-actions-item">
+              <i class="queuelist-cover-actions-icon fas fa-ellipsis-h"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="queuelist-cover-title">
+          <a class="queuelist-cover-link" href=""></a>
+        </div>
+        <div class="queuelist-cover-subtitle">
+          <a class="queuelist-cover-link" href=""></a>
+        </div>
+      </div>
+      <div class="queuelist-content">
+        <div class="queuelist-header">
+          <span class="queuelist-title">Queue</span>
+          <span class="queuelist-subtitle"></span>
+        </div>
+        <div class="queuelist-datagrid">
+          <div class="queuelist-grid-content">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-lyric">
+    <div class="lyric-heading">
+      <h4 class="lyric-header">
+        LYRICS
+      </h4>
+      <button class="lyric-btn-close">
+        CLOSE
+      </button>
+    </div>
+    <div class="lyric-content">
+      <div class="lyric-container">
+        <ul class="lyric-content-list">
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-player" id="page-player">
+    <div class="player-controls">
+      <ul class="control-list">
+        <li class="control-item">
+          <i class="control-item-icon fas fa-step-backward" id="control-item-icon-backward"></i>
+        </li>
+        <li class="control-item control-item-toggle-play player">
+          <i class="control-item-icon fas fa-play" id="control-item-icon-play"></i>
+          <i class="control-item-icon fas fa-pause" id="control-item-icon-pause"></i>
+        </li>
+        <li class="control-item">
+          <i class="control-item-icon fas fa-step-forward" id="control-item-icon-forward"></i>
+        </li>
+      </ul>
+    </div>
+    <div class="player-track">
+      <div class="track-container">
+        <div class="track-heading">
+          <div class="track-title">
+            <div class="marquee">
+              <div class="marquee-wrapper">
+                <div class="marquee-content">
+                  <a href="" class="track-link"></a>
+                  ·
+                  <a href="" class="track-link"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="track-actions">
+            <ul class="track-actions-list">
+              <li class="track-actions-item">
+                <button class="track-actions-btn tooltips btn-lyric">
+                  <i class="track-actions-icon fas fa-music"></i>
+                  <span class="tooltiptexts">Views lyrics</span>
+                </button>
+              </li>
+              <li class="track-actions-item">
+                <button class="track-actions-btn tooltips">
+                  <span class="tooltiptexts">Add to Playlist</span>
+                  <i class="track-actions-icon fas fa-plus icon-plus"></i>
+                  <div class="add-track-to-playlist-player">
+                    <div class="add-track-to-playlist-content">
+                      <div class="header-of-list">Choose playlist</div>
+                      <ul class="list-of-playlist">
+
+                      </ul>
+                    </div>
+                  </div>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="track-seekbar">
+          <div class="slider slider-autohide">
+            <div class="slider-counter slider-counter-current">00:00</div>
+            <div class="slider-track">
+              <div class="slider-track-default"></div>
+              <input id="slider-track-input" class="slider-track-input" type="range" value="0" step="1" min="0"
+                max="100">
+              <audio src="" id="audio"></audio>
+            </div>
+            <div class="slider-counter slider-counter-max"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="player-options">
+      <ul class="options-list">
+        <li class="option-item">
+          <ul class="option-item-list">
+            <li class="option-item-list-item tooltips btn-chormecast">
+              <i class="option-icon fab fa-chromecast"></i>
+              <span class="tooltiptexts">Chormecast</span>
+            </li>
+            <li class="option-item-list-item tooltips btn-repeat">
+              <i class="option-icon fas fa-redo"></i>
+              <span class="tooltiptexts">Reapeat all track in list</span>
+            </li>
+            <li class="option-item-list-item tooltips btn-random">
+              <i class="option-icon fas fa-random"></i>
+              <span class="tooltiptexts">Turn on Shuffle</span>
+            </li>
+            <li class="option-item-list-item btn-volume-toggle un-mute">
+              <i class="option-icon fas fa-volume-up" id="volume-up"></i>
+              <i class="option-icon fas fa-volume-mute" id="mute"></i>
+              <div class="volume-option">
+                <input id="option-item-list-item-volume" class="option-item-list-item-volume volume-setting"
+                  type="range" value="30" step="1" min="0" max="100">
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="option-item">
+          <button class="btn-queue">Queue</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="notification-tracks">
+
+</div>
+
+<div class="modal-playlist" id="modal-playlist-create">
+  <div class="modal_overlay"></div>
+  <div class="modal_body">
+    <div class="modal-header">
+      <span>Create Playlist</span>
+      <i class="fas fa-times modal-close"></i>
+    </div>
+    <div class="modal-content-container">
+      <form action="/api/profile/me/playlists/create" method="post">
+        <div class="modal-content-info">
+          <div class="modal-content-info-photo">
+            <input type="file" class="playlist-photo" accept="image/png, image/jpeg">
+            <div class="modal-content-info-choose-btn">
+              <i class="fas fa-camera"></i>
+            </div>
+          </div>
+          <div class="modal-content-info-input">
+            <label for="playlist-name" id="label-playlist-name">Name</label>
+            <input type="text" placeholder="Playlist name" class="playlist-name-input" name="playlistName">
+          </div>
+        </div>
+        <div class="modal-content-description">
+          <label for="playlist-description">Description</label>
+          <textarea placeholder="Playlist description" class="playlist-description-input" name="description"></textarea>
+        </div>
+        <button class="modal-btn-create">
+          CREATE
+        </button>
+      </form>
+    </div>
+
+  </div>
+</div>
+<div class="modal-playlist" id="modal-playlist-edit">
+  <div class="modal_overlay"></div>
+  <div class="modal_body">
+    <div class="modal-header">
+      <span>Edit Playlist</span>
+      <i class="fas fa-times modal-close"></i>
+    </div>
+    <div class="modal-content-container">
+      <form action="" method="post" name="edit-playlist-form" id="form-edit-playlist">
+        <div class="modal-content-info">
+          <div class="modal-content-info-photo">
+            <input type="file" id="playlist-photo" accept="image/png, image/jpeg">
+            <div class="modal-content-info-choose-btn">
+              <i class="fas fa-camera"></i>
+            </div>
+          </div>
+          <div class="modal-content-info-input">
+            <label for="playlist-name" id="label-playlist-name">Name</label>
+            <input type="text" placeholder="Playlist name" class="playlist-name-input" name="playlistName">
+          </div>
+        </div>
+        <div class="modal-content-description">
+          <label for="playlist-description">Description</label>
+          <textarea placeholder="Playlist description" class="playlist-description-input" name="description"></textarea>
+        </div>
+        <button class="modal-btn-create">
+          SAVE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="delete-playlist-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">DELETE PLAYLIST ?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        This action cannot be undone.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" id="btn-delelte-playlist">DELETE</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">CANCEL</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="delete-track-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">DELETE TRACK ?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        This action cannot be undone.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" id="btn-delelte-track">DELETE</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">CANCEL</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<form method="post" name="delete-playlist-form"></form>
+
+<script type="module" src="/javascript/index.js"></script>
+
+<script>
+  const choosePhotoBtn = $('.modal-content-info-choose-btn');
+  choosePhotoBtn.click(function () {
+    $('#playlist-photo').click();
+  });
+</script>

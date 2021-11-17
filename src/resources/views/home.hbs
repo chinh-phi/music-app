@@ -1,0 +1,166 @@
+<div class="header__action">
+    <div id="action-login">
+        <a href="/login">LOG IN</a>
+    </div>
+</div>
+<div class="main ">
+    <div class="row">
+        <h1 class="title col-xl-12">Get the most effortless<br>audio entertainment for you.<br> Only on Deezer.</h1>
+
+        <div class="packets col-xl-12">
+            <div class="card card-free">
+                <div class="card-body">
+                    <h2 class="card-title">deezer Free</h2>
+                    <p class="card-text">Music, podcasts and radio, plus recommendations made for you.</p>
+                    <a href="#" class="btn btn-sign-free">SIGN UP FREE</a>
+                    <p class="card-text">No payment required</p>
+
+                </div>
+            </div>
+
+            <div class="card card-premium">
+                <div class="card-body">
+                    <h2 class="card-title">deezer Premium</h2>
+                    <p class="card-text">Pick and play any track ad-free, plus download your favorites and listen
+                        offline.
+                        Stream across all your devices.</p>
+                    <a href="#" class="btn btn-sign-free">TRY FOR FREE</a>
+                    <p class="card-text card-text--time">1 month free</p>
+                    <p class="card-text card-text--fee">then £9.99/month.</p>
+                    <p class="card-text">No commitment, cancel anytime.</p>
+
+                </div>
+            </div>
+
+            <div class="card card-family">
+                <div class="card-body">
+                    <h2 class="card-title">deezer Family</h2>
+                    <p class="card-text">
+                        Music for everyone.
+                        <br>
+                        Get 6 individual accounts, all with Deezer Premium benefits.
+                        <br>
+                        Listen simultaneously on multiple devices.
+                    </p>
+                    <a href="#" class="btn btn-sign-free">TRY FOR FREE</a>
+                    <p class="card-text card-text--time">1 month free</p>
+                    <p class="card-text card-text--fee">then £14.99/month.</p>
+                    <p class="card-text">No commitment, cancel anytime.</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="information">
+            <h2>FAQ</h2>
+            <ul class="info-list">
+                <li class="info-item">
+                    <h3>What is Deezer?</h3>
+                    <i class="fas fa-chevron-right info-item-icon"></i>
+                    <div class="info-item-content">
+                        <p>
+                            Deezer is a music streaming app that gives you access to over 73 million tracks worldwide
+                            and
+                            other
+                            audio content like podcasts. You even get curated recommendations and Deezer Originals
+                            exclusives.
+                        </p>
+                        <p>
+                            Listen to music online, collect your favorites, create playlists, and share with friends,
+                            all
+                            for
+                            free.
+                        </p>
+                        <p>
+                            You can also download and listen offline with Deezer Premium.
+                        </p>
+                    </div>
+                </li>
+                <li class="info-item">
+                    <h3>How much is Deezer</h3>
+                    <i class="fas fa-chevron-right info-item-icon"></i>
+                    <div class="info-item-content">
+                        <p>
+                            It's free to sign up and use the app! You can unlock more features by subscribing to any of
+                            our
+                            paid
+                            plans for as low as £9.99/month, terms apply.
+                        </p>
+                    </div>
+                </li>
+                <li class="info-item">
+                    <h3>How do I use Deezer?</h3>
+                    <i class="fas fa-chevron-right info-item-icon"></i>
+                    <div class="info-item-content">
+                        <p>
+                            Download the app on your phone, tablet or desktop, then sign up for free. Once you've logged
+                            into
+                            your new account, you can stream your favorite music!
+                        </p>
+
+                    </div>
+                </li>
+                <li class="info-item">
+                    <h3>How do I cancel my subcription?</h3>
+                    <i class="fas fa-chevron-right info-item-icon"></i>
+                    <div class="info-item-content">
+                        <p>
+                            You can update or cancel an existing subscription at any time by selecting "Manage my
+                            subscription"
+                            from your account settings.
+                        </p>
+
+                    </div>
+                </li>
+                <li class="info-item">
+                    <h3>Where can I listen to Deezer?</h3>
+                    <i class="fas fa-chevron-right info-item-icon"></i>
+                    <div class="info-item-content">
+                        <p>
+                            Deezer is supported on desktop and most mobile and tablet devices. It's also possible to
+                            stream
+                            and
+                            cast from select home and speaker devices. You can find all devices <a>here</a>.
+                        </p>
+                        <p>
+                            You can also download and listen offline with Deezer Premium.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="legal">
+            <p>
+                These offers are non-binding, meaning you can cancel your subscription at any time. These offers are
+                only
+                available to users with no current nor previous subscription to any Deezer subscription tier, with no
+                benefit from any previous Deezer promotion and no previous free trial to any Deezer subscription tier at
+                any
+                time. These offers cannot be combined with any other offer. These are one-time only offers and are valid
+                for
+                one user only.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    var infoItem = document.querySelectorAll('.info-item');
+    infoItem.forEach(function (item, index, array) {
+        item.onclick = function () {
+            var content = item.querySelector('.info-item-content');
+            var icon = item.querySelector('.info-item-icon');
+            console.log(content, icon);
+            if (!content.classList.contains('active')) {
+                content.classList.add('active');
+                icon.classList.remove('fa-chevron-right');
+                icon.classList.add('fa-chevron-down');
+            } else {
+                content.classList.remove('active');
+                icon.classList.remove('fa-chevron-down');
+                icon.classList.add('fa-chevron-right');
+            }
+        }
+    })
+</script>

@@ -1,0 +1,57 @@
+<form id="form-login" method="post" action="/login">
+    <h3 class="form-heading">Log in</h3>
+    <p class="form-recommend-signup">
+        Not registered on Deezer yet?
+        <a href="/register">Sign up</a>
+    </p>
+
+    <div class="form-method-login">
+        <a href="" class="btn-method-login">
+            <i class="btn-method-icon fab fa-facebook"></i>
+            FACEBOOK
+        </a>
+        <a href="/auth/google" class="btn-method-login">
+            <i class="btn-method-icon fab fa-google"></i>
+            GOOGLE
+        </a>
+        <a href="" class="btn-method-login">
+            <i class="btn-method-icon fab fa-apple"></i>
+            APPLE
+        </a>
+    </div>
+
+    <div class="form-content">
+        <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            <span class="form-message"></span>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Password" name="password">
+            <span class="form-message"></span>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-login">LOG IN</button>
+    <h5 id="forgot-password">
+        <a href="">
+            FORGOT THE PASSWORD?
+        </a>
+    </h5>
+    <p id="rules">
+        This site is protected by reCAPTCHA and the Google <a href="">Privacy Policy</a> and <a href="">Terms of
+            Service</a> apply.
+    </p>
+</form>
+
+<script src="/javascript/validateForm.js"></script>
+<script>
+    Validator({
+        form: '#form-login',
+        errorSelector: '.form-message',
+        rules: [
+            Validator.isRequired('#email', 'Please enter your email'),
+            Validator.isRequired('#password', 'Please enter your password')
+        ]
+    })
+</script>
